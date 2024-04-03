@@ -10,5 +10,6 @@ StudentRouter.post(
   validator(CreateStudentRequest),
   StudentController.CreateStudent
 );
+StudentRouter.get("/", StudentController.GetAllstudent)
 
 export default StudentRouter;

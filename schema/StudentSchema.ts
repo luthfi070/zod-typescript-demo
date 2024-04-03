@@ -12,3 +12,10 @@ export const CreateStudentRequest = object({
     age: z.number(),
   }),
 });
+
+export const GetAllStudentResponse = object({
+  _id: z.string(),
+  name: z.string(),
+  age: z.number(),
+  __v: z.number()
+})
